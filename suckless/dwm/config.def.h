@@ -152,7 +152,7 @@ static const char *toggle[]         = { "mpc", "toggle", NULL };
 static const char *next[]           = { "mpc", "next", NULL };
 static const char *prev[]           = { "mpc", "prev", NULL };
 static const char *brighter[]	    = { "brightnessctl", "set", "10%+", NULL };
-static const char *dimmer[]	    = { "brightnessctl", "set", "10%-", NULL };
+static const char *dimmer[]			= { "brightnessctl", "set", "10%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                      key                function               argument */
@@ -203,8 +203,8 @@ static const Key keys[] = {
 	{0,                              XK_F6,           spawn,                  {.v = toggle}},
 	{0,                              XK_F8,           spawn,                  {.v = next}},
 	{0,                              XK_F7,           spawn,                  {.v = prev}},
-	{0,				 XF86XK_MonBrightnessDown,	spawn,	  {.v = dimmer } },
-	{0, 				 XF86XK_MonBrightnessUp,	spawn,	  {.v = brighter } },
+	{0,			  XF86XK_MonBrightnessDown,			  spawn,				  {.v = dimmer } },
+	{0, 	        XF86XK_MonBrightnessUp,			  spawn,				  {.v = brighter } },
 
 		TAGKEYS(                         XK_1,                            0)
 		TAGKEYS(                         XK_2,                            1)
