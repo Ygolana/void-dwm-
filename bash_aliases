@@ -34,7 +34,7 @@ alias y='yt-dlp'
 alias ya='yt-dlp -f 140'
 alias yb='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" --merge-output-format mp4'
 alias yt='yt-dlp yt-dlp --skip-download --write-thumbnail'
-alias ff="ffmpeg -framerate 16 -f x11grab -s 1920x1080 -i :0.0+0,0 Output.mkv"
+alias ff="ffmpeg -framerate 16 -f x11grab -s 1920x1080 -i :0.0+0,0 ~/Videos/Recordings/Output.mkv"
 alias rec="ffmpeg -framerate 24 -f x11grab -video_size 1920x1080 -i :0.0+1366,0 -preset ultrafast -crf 8 ~/Recordings/Output.mkv"
 alias f="ffmpeg -framerate 24 -f x11grab -video_size 1366x768 -i :0.0+0,0 -preset ultrafast -crf 8 ~/Recordings/Output.mkv"
 alias cam="ffplay -f v4l2 -framerate 29 -video_size 1280x720 /dev/video0"
